@@ -1,0 +1,3 @@
+# KQL query to filter the Nmap and Nikto user-agent queries
+
+event.dataset:zeek.http and user_agent.original:*Nmap* or user_agent.original *Nikto*
